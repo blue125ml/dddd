@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout Example</title>
+  <link rel="stylesheet" href="chatcss1.css">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 20% 70% 10%;
+      gap: 10px;
+      height: 100vh;
+      padding: 10px;
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .center-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .center-left p {
+      margin: 0;
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+    .center-left img {
+      width: 100%;
+      height: auto;
+    }
+    .center-center input[type="file"] {
+      display: none;
+    }
+    .center-center #choose-file-btn {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .center-center #choose-file-btn:hover
