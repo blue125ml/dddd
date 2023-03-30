@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="2nd_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <script src="2nd_js.js"></script>
+</head>
+<body>
+
+<div class="grid-container">
+  <a class="box top-left" onclick="location.href='chat1.html'">심전도 분석 프로그램</a>
+  <div class="box top-center">검사 결과</div>
+  <div class="box top-right">로그인 기능</div>
+
+  <div class="box center-left">
+
+    <div class="center-left">
+      <div class="model-menu">
+        <a href="#" class="model-select">모델 선택</a>
+        <ul class="model-options">
+          <li><a href="#" data-image="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxFuDN%2FbtrFoDet4CV%2FYTaFHvog6mXarjrl0IR69K%2Fimg.jpg" onclick="updateImage(this)">1</a></li>
+          <li><a href="#" data-image="https://placekitten.com/400/400" onclick="updateImage(this)">2</a></li>
+          <li><a href="#" data-image="https://placekitten.com/500/500" onclick="updateImage(this)">3</a></li>
+          <li><a href="#" data-image="https://placekitten.com/600/600" onclick="updateImage(this)">4</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box center-center">
+
+    </div>
+
+
+  </div>
+
+  <div class="box center-right">
+    <img id="selected-image" src="" style="max-width:100%; max-height: 100%;">
+  </div>
+  <script>
+    function updateImage(element) {
+      var imageURL = element.getAttribute("data-image");
+      document.getElementById("selected-image").setAttribute("src", imageURL);
+    }
+  </script>
+  <div class="box bottom-left">3</div>
+  <div class="box bottom-center">4</div>
+  <div class="box bottom-right">5</div>
+</div>
+
+
+</body>
+</html>
