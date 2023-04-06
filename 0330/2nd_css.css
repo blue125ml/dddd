@@ -11,7 +11,7 @@ html, body {
 }
 .grid-container  {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 15% 75% 10%;
     height: 100%;
     gap: 10px;
@@ -110,24 +110,26 @@ html, body {
 
 }
 
-
-
 .center-right {
+
     grid-row: 2 / 3;
     grid-column: 3 / 4;
 }
 
-.bottom-left {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
+.text1{
+    float: left;
+    border: 1px solid;
 }
+.text2{
+    float: left;
+    border : 1px solid;
+}
+.text3{
+    float: left;
+    border : 1px solid;
+}
+.text4{
+     float: left;
+     border : 1px solid;
+ }
 
-.bottom-center {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-}
-
-.bottom-right {
-    grid-row: 3 / 4;
-    grid-column: 3 / 4;
-}

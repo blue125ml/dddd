@@ -47,3 +47,16 @@ modelOptions.addEventListener('click', function(e) {
     const imageSrc = e.target.dataset.image;
     selectedImage.src = imageSrc;
 });
+const fileInput = document.getElementById('file-input');
+
+fileInput.addEventListener('change', (event) => {
+    const selectedFile = event.target.files[0];
+    const fileType = selectedFile.name.split('.').pop().toLowerCase();
+
+    if (fileType !== 'csv') {
+        alert('CSV 파일만 선택해주세요.');
+        return;
+    }
+
+    // 파일 업로드 로직
+});
